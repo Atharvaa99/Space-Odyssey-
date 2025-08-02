@@ -1,0 +1,196 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+
+.scroll-container {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+/* Slide setup and main Background */
+.slide {
+    scroll-snap-align: start;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.slide-1 {
+    background: url(slide-1-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slide-2 {
+    background: url(slide-2-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slide-3 {
+    background: url(slide-3-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Overlays and Animations */
+
+.overl-1 {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-size: auto;
+    position: absolute;
+    top: 30%;
+    opacity: 1;
+    background: url(slide-1-overlay.png);
+    animation: breathe-1 3s ease-in-out infinite,
+        drift-1 30s linear infinite;
+}
+
+.overl-2 {
+    background: url(slide-2-overlay.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    top: 0;
+    opacity: 0.2;
+    position: absolute;
+    z-index: 2;
+    animation: breathe-2 4s ease-in-out infinite;
+}
+
+.overl-3{
+    background: url(slide-3-overlay.png);
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+    background-repeat: no-repeat;
+    top: 0;
+    position: absolute;
+    animation: breathe-3 5s ease-in-out infinite, mars-shimmer 12s ease-in-out infinite;
+}
+@keyframes breathe-1 {
+    0% {
+        opacity: 0.9;
+        transform: scale(0.95);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    100% {
+        opacity: 0.9;
+        transform: scale(0.95);
+    }
+}
+@keyframes breathe-2 {
+    0% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.4;
+        transform: scale(1.05);
+    }
+
+    100% {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+}
+@keyframes breathe-3 {
+    0% {
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 0.1;
+    }
+}
+
+@keyframes drift-1 {
+    0% {
+        transform: translate(-30vw, 30vh);
+    }
+
+    50% {
+        transform: translate(50vw, 25vh);
+    }
+
+    100% {
+        transform: translate(75vw, 20vh);
+    }
+}
+
+@keyframes mars-shimmer {
+    0% {
+        filter: contrast(180%) brightness(1.1) hue-rotate(0deg);
+    }
+    50% {
+        filter: contrast(180%) brightness(1.3) hue-rotate(5deg);
+    }
+    100% {
+        filter: contrast(180%) brightness(1.1) hue-rotate(0deg);
+    }
+}
+
+/* Card */
+
+.card p{
+    font-weight: 550;
+}
+.card h2{
+    font-weight: 700;
+}
+.card-1 {
+  position: absolute;
+  z-index: 3;
+  bottom: 10%;
+  left: 5%;
+  color:rgb(27, 1, 1);
+  z-index: 3;
+  max-width: 40ch;
+  font-size: clamp(1.5rem,2.5cqi,2rem);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+.card-2 {
+  position: absolute;
+  z-index: 3;
+  bottom: 35%;
+  left: 30%;
+  color:whitesmoke;
+  z-index: 3;
+  max-width: 40ch;
+  font-size: clamp(1.5rem,2.5cqi,2rem);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+.card-3 {
+  position: absolute;
+  z-index: 3;
+  bottom: 10%;
+  right: 5%;
+  color:rgb(245, 212, 143);
+  z-index: 3;
+  max-width: 40ch;
+  font-size: clamp(1.5rem,2.5cqi,2rem);
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
