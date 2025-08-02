@@ -2,7 +2,7 @@
 
 A cinematic scroll storytelling experience built entirely in **HTML + CSS**, inspired by Apple Vision Pro's product page and reimagined in an **anime Ghibli-style universe**. Features layered scroll visuals, CSS-only motion effects, and fully responsive design — no JavaScript, no frameworks.
 
-> 🔗 **Live Demo**: []
+> 🔗 **Live Demo**: [https://space-odyssey-umber.vercel.app]
 
 ---
 
@@ -56,6 +56,6 @@ A cinematic scroll storytelling experience built entirely in **HTML + CSS**, ins
 Clone or download the repo, open `index.html` in your browser, or deploy instantly via Vercel/Netlify.
 
 ```bash
-git clone https://github.com/Atharvaa99/
+git clone https://github.com/Atharvaa99/Space-Odyssey-
 cd anime-odyssey
 open index.html
