@@ -1,4 +1,4 @@
-# 🌠 VisionOS Scroll Clone — Anime Space Odyssey
+# Anime Space Odyssey
 
 A cinematic scroll storytelling experience built entirely in **HTML + CSS**, inspired by Apple Vision Pro's product page and reimagined in an **anime Ghibli-style universe**. Features layered scroll visuals, CSS-only motion effects, and fully responsive design — no JavaScript, no frameworks.
 
